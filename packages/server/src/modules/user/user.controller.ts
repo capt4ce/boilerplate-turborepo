@@ -1,12 +1,14 @@
 import { Controller, Get } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
+import { UserService } from './user.service';
 
-@Controller('/api/v1/user')
+@Controller('/api/v1/users')
+@ApiTags('users')
 export class UserController {
-    constructor() {}
+    constructor(private userService: UserService) {}
 
     @Get()
-    async list(): Promise<[]> {
-        await new Promise((resolve) => setTimeout(resolve, 5000))
-        return []
+    async listUsers(): Promise<[]> {
+        return this.userService.listUsers()
     }
 }
