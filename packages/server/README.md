@@ -3,7 +3,10 @@
 ## Commands
 `nest generate module <module_name> <module_subdirectory_from_src>`
 
-## Instrumentations
+## Notes
+## Swagger documentation
+available in `http://localhost:8000/docs`
+
 ### Metrics
 it's available in `http://localhost:8081/metrics`
 

@@ -33,7 +33,7 @@ async function bootstrap() {
 
   // setup swagger
   const options = new DocumentBuilder()
-    .setTitle('nestjs-otel - movie service')
+    .setTitle('martplus-server')
     .setVersion('1.0')
     .build();
 
