@@ -25,9 +25,10 @@
       "typeorm": "0.3.20"
    },
    "scripts": {
-      "typeorm": "typeorm-ts-node-commonjs",
       "start": "node dist/index.js",
       "dev": "tsup --watch --onSuccess \"node dist/index.js\"",
-      "build": "tsup"
+      "build": "tsup",
+      "typeorm": "typeorm",
+      "db:migrate": "npm run typeorm migration:run"
    }
 }
