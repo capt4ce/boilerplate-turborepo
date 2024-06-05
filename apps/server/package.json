@@ -1,0 +1,33 @@
+{
+   "name": "server",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "type": "commonjs",
+   "devDependencies": {
+      "@swc/core": "^1.5.25",
+      "@types/fastify-cors": "^2.1.0",
+      "@types/node": "^20.14.1",
+      "ts-node": "10.9.1",
+      "tsup": "^8.1.0",
+      "typescript": "5.4.5"
+   },
+   "dependencies": {
+      "@autotelic/fastify-opentelemetry": "^0.21.0",
+      "@opentelemetry/sdk-trace-base": "^1.24.1",
+      "@opentelemetry/sdk-trace-node": "^1.24.1",
+      "@repo/eslint-config": "workspace:*",
+      "@repo/typescript-config": "workspace:*",
+      "axios": "^1.7.2",
+      "fastify": "^4.27.0",
+      "fastify-cors": "^3.0.0",
+      "reflect-metadata": "^0.1.13",
+      "sqlite3": "^5.0.2",
+      "typeorm": "0.3.20"
+   },
+   "scripts": {
+      "typeorm": "typeorm-ts-node-commonjs",
+      "start": "node dist/index.js",
+      "dev": "tsup --watch --onSuccess \"node dist/index.js\"",
+      "build": "tsup"
+   }
+}
