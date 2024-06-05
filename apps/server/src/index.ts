@@ -19,8 +19,8 @@
 
 // }).catch(error => console.log(error))
 
-import FastifyServer from './modules/http-server/fastify'
-import { AppDataSource } from "./modules/database/typeorm/data-source"
+import FastifyServer from './dependencies/http-server/fastify'
+import { AppDataSource } from "./dependencies/database/typeorm/data-source"
 
 AppDataSource.initialize()
 
