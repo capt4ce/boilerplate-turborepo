@@ -4,7 +4,7 @@ import { OpenTelemetryModule } from 'nestjs-otel';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UserModule } from './modules/user/user.module';
+import { UsersModule } from './modules/users/users.module';
 import env from './dependencies/env';
 import { Logger } from 'nestjs-pino';
 import { LoggerModule } from './dependencies/logger/logger.module';
@@ -47,7 +47,7 @@ const openTelemetryModuleConfig = OpenTelemetryModule.forRoot({
     typeOrmModule,
     openTelemetryModuleConfig,
     LoggerModule,
-    UserModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],

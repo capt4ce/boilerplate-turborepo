@@ -1,15 +1,15 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
-import {
-  FastifyAdapter,
-  NestFastifyApplication,
-} from '@nestjs/platform-fastify';
+// import {
+//   FastifyAdapter,
+//   NestFastifyApplication,
+// } from '@nestjs/platform-fastify';
+// import { FastifyRoutePathInterceptor } from './dependencies/FastifyRoutePathInterceptor';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { Logger } from 'nestjs-pino';
 
 import { AppModule } from './app.module';
 import otelSDK from './tracing';
-import { FastifyRoutePathInterceptor } from './dependencies/FastifyRoutePathInterceptor';
 import envConfig from './dependencies/env';
 
 async function bootstrap(env: typeof envConfig) {
