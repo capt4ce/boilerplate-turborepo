@@ -10,9 +10,9 @@ import { Logger } from 'nestjs-pino';
 import { AppModule } from './app.module';
 import otelSDK from './tracing';
 import { FastifyRoutePathInterceptor } from './dependencies/FastifyRoutePathInterceptor';
-import env from './dependencies/env';
+import envConfig from './dependencies/env';
 
-async function bootstrap() {
+async function bootstrap(env: typeof envConfig) {
   // Start SDK before nestjs factory create
   await otelSDK.start();
 
@@ -43,4 +43,4 @@ async function bootstrap() {
   await app.listen(env.SERVICE_PORT, '0.0.0.0');
   console.log(`Application is running on: ${await app.getUrl()}`);
 }
-bootstrap();
+bootstrap(envConfig);

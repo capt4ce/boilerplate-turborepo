@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 export default {
     SERVICE_NAME: process.env.SERVICE_NAME || 'martplus-server',
     SERVICE_PORT: parseInt(process.env.SERVICE_PORT || '8000'),
