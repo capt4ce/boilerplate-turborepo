@@ -25,14 +25,9 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
+## Dependencies
+- pnpm
+- node version > 18
 
 ### Develop
 
@@ -41,6 +36,15 @@ To develop all apps and packages, run the following command:
 ```
 cd my-turborepo
 pnpm dev
+```
+
+### Build
+
+To build all apps and packages, run the following command:
+
+```
+cd my-turborepo
+pnpm build
 ```
 
 ### Remote Caching
