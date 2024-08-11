@@ -1,6 +1,6 @@
-# Martplus - Monorepo
+# Boilerplate - Monorepo
 
-This is monorepo for project MartPlus
+This is a Boilerplate created with Turborepo.
 
 ## What's inside?
 

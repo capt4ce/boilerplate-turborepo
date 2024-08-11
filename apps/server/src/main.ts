@@ -33,7 +33,7 @@ async function bootstrap(env: typeof envConfig) {
 
   // setup swagger
   const options = new DocumentBuilder()
-    .setTitle('martplus-server')
+    .setTitle('boilerplate-server')
     .setVersion('1.0')
     .build();
 

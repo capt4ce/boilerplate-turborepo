@@ -1,5 +1,5 @@
 {
-  "name": "martplus",
+  "name": "turborepo-boilerplate",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -10,6 +10,7 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.2.0",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
